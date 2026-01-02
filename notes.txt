@@ -1,7 +1,6 @@
 <<< AAA >>>
-<<< cmd.txt >>>
+<<< notes.txt >>>
 
 
 
 <<< ZZZ >>>
-
