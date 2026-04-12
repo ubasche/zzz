@@ -1,0 +1,203 @@
+<<< AAA >>>
+<<< test-utxt.txt >>>
+
+Contents
+--------
+=== Heading 1
+  ~~~ Heading 2
+  ~~~ Heading 2
+    -:- Heading 3
+  ~~~ Issues - Heading 2
+
+=== Appendix
+  ~~~ Apx - winlogbeat.yml
+
+=== Issues
+  ~~~ Issues - Kubernetes Common Errors (C)
+  ~~~ Issues - Templates
+    -:- Issue T-0: Empty template
+    -:- Issue T-1: Example template
+
+
+------------------------------------------------------------
+Note:
+  - To get the headings:
+      grep -E "=== |  ~~~ |    -:- " "file.txt"
+      Get-ChildItem -Path "file.txt" | Select-String -Pattern '(=== )|(  ~~~ )|(    -:- )'
+=== xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx ====
+------------------------------------------------------------
+
+==============================================================================================================
+==============================================================================================================
+=== Heading 1 - top = 110 char, bottom = 80 char
+--------------------------------------------------------------------------------
+
+------------------------------------------------------------
+  ~~~ Heading 2 - top/bottom = 60 char
+------------------------------------------------------------
+
+- --------------------------------------
+    -:- Heading 3 - top/bottom = 40 char
+- --------------------------------------
+
+  ``` Heading 4
+  -------------
+
+
+Underlined text
+---------------
+
+Underlined text 2
+~~~~~~~~~~~~~~~~~
+
+
+<<<<<
+Full file                   # comment
+                            // comment
+>>>>>
+
++++++
+Partial file, line graph    # comment
+                            // comment
++++++
+
+.....
+Command output              # comment
+123                         // comment
+.....
+
+,,,,,
+Command or input block      ## comment
+                            // comment
+,,,,,
+
+
+> code line                 # comment
+> code line                 // comment
+ 
+
+Lists
+-----
+  Single bullet list:
+    - Item level 1
+        ~ Item level 2
+        ~ Item level 2
+            + Item level 3
+            + Item level 3
+    - Item level 1
+
+  Double bullet list:
+    -- Item level 1
+        ~~ Item level 2
+        ~~ Item level 2      
+            ++ Item level 3
+    -- Item level 1
+
+Numbered Lists
+--------------
+  1.- one
+  2.- two 
+    a.- aaa
+    b.- bbb 
+  3.- three
+
+Tree
+----
+  root
+    +-- aaa
+    |     +-- bbb
+    +-- ccc
+    +-- ddd
+
+          
+Note:
+  ~ Copy the file "ii" into your home directory for easy access via ":r ii"
+  ~ Strings "double-quoted" and 'single-quoted'
+  ~ Numbers 1, 2, 2, 7.7.8
+  - !!! Important Note !!!
+  - Keywords:
+      Note: FixIt ToDo xxxx
+      
+Comments
+  # Line comment 1
+  // Line comment 2
+  
+  Sheet 
+
+  = asdjasdhd
+  + asdjasdf
+  - adapsdfo
+  - !!! attention text
+  !!! attention text
+  
+
+  Icons:
+  ======
+  Pros and cons (example)
+  -------------
+    ✅ Supported Executors for Autoscaler Runners
+      1. instance
+      2. docker-autoscaler
+
+    ❌ Not Compatible with Autoscaling (via Fleeting)
+        - shell
+        - docker
+        - docker+machine (deprecated)
+        ...
+
+    🔍 Tips for Optimization
+    🛠️ Step-by-Step Configuration Guide
+    🏗️ Legacy Architecture
+    🚀 Modern Architecture
+    🧠 Understanding Docker Architecture
+    📂 Internal Architecture Insights
+    🔄 Migration Context
+    🔑 Summary Table
+    
+  
+==============================================================================================================
+==============================================================================================================
+=== XXX Issues
+--------------------------------------------------------------------------------
+
+------------------------------------------------------------
+  ~~~ YYY-999: Issue template
+------------------------------------------------------------
+## Command:
+  cmd
+
+## Symptoms:
+  full error message + explanation what happened
+
+## Actions/Checks:
+  - Check 1
+  - Check 2
+
+## Possible Causes:
+  1. ...
+  1.1. ...
+  1.2. ...
+  2. ...
+
+## Solution:
+  1. Fix: ...
+  2. Workaround: ...
+  3. Bug: ...
+
+--------------------
+
+
+========================================================================================================================
+========================================================================================================================
+=== Appendix
+--------------------------------------------------------------------------------
+
+--------------------------------------------------
+  ~~~ Apx - winlogbeat.yml
+--------------------------------------------------
+
+
+========================================================================================================================
+========================================================================================================================
+
+<<< ZZZ >>>

@@ -1,7 +1,6 @@
 <<< AAA >>>
-<<< cmd.txt >>>
+<<< todo.txt >>>
 
 
 
 <<< ZZZ >>>
-
